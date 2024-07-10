@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #fa8a03;
+  --text-color: #4c4c4c;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.align-center {
+  align-items: center;
+}
+
+a.title {
+  font-weight: 600;
+  margin-left: -10px;
+}
+
+.move {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fa8a03;
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg) scale(1) skew(1deg);
+  }
+  10% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+
+  50% {
+    transform: rotate(0deg) scale(1) skew(1deg);
+  }
+  100% {
+    transform: rotate(0deg) scale(1) skew(1deg);
+  }
+}
+
+@keyframes rotateSubIcon {
+  0% {
+    transform: rotate(0deg) scale(0) skew(1deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(0deg) scale(0.5) skew(1deg);
+    opacity: 0.2;
+  }
+
+  75% {
+    transform: rotate(0deg) scale(0.5) skew(1deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(0deg) scale(1) skew(1deg);
+    opacity: 0.9;
+  }
+}
+.sub-main-heading,
+.main-heading {
+  padding: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.sub-main-heading {
+  border-bottom: 1px solid #ccc;
+}
+
+.center {
+  text-align: center;
+}
